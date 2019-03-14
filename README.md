@@ -1,5 +1,6 @@
-Phaser 3 with Parcel
-====================
+Using Phaser3 with Parcel to build tutorial game from book by
+Emanuele Feronato "HTML5 Cross Platform Game Development Using Phaser3"
+=======================================================================
 
 [Parcel is a fast, zero-config web application bundler](https://parceljs.org).
 
