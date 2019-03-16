@@ -1,5 +1,7 @@
-Using Phaser3 with Parcel to build tutorial game from book by
-Emanuele Feronato "HTML5 Cross Platform Game Development Using Phaser3"
+# Education-Phaser3-GameDev
+
+## Using Phaser3 with Parcel to build tutorial game from book by Emanuele Feronato "HTML5 Cross Platform Game Development Using Phaser3"
+
 =======================================================================
 
 [Parcel is a fast, zero-config web application bundler](https://parceljs.org).
@@ -8,7 +10,8 @@ This is a simple Phaser game template using Parcel, and based on [Making your fi
 
 Most common transformations ([CoffeeScript](https://parceljs.org/coffeeScript.html), [Babel/Flow](https://parceljs.org/javascript.html), [TypeScript](https://parceljs.org/typeScript.html)) work “out of the box”.
 
-Use
+## Use
+
 ---
 
 ```sh
@@ -30,7 +33,8 @@ See:
 - [Parcel: Production](https://parceljs.org/production.html)
 - [Parcel: CLI](https://parceljs.org/cli.html)
 
-Game assets
+## Game assets
+
 -----------
 
 Static assets used in your JavaScript need to be imported or required:
@@ -43,8 +47,9 @@ See [bootScene](./src/app/bootScene.js) for an example.
 
 If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy) instead.
 
-Package aliasing
-----------------
+## Package aliasing
+
+---
 
 You can use [package.alias](https://parceljs.org/module_resolution.html#aliasing) to specify an alternative Phaser build, e.g.,
 
@@ -57,8 +62,9 @@ You can use [package.alias](https://parceljs.org/module_resolution.html#aliasing
 }
 ```
 
-Hot reload
-----------
+## Hot reload
+
+---
 
 When running the dev server the game is destroyed and then recreated after you save changes to your files. Rarely, this can fail. Just refresh the browser.
 
@@ -67,4 +73,3 @@ If you don't like [hot reload](https://parceljs.org/hmr.html) at all, you can tu
 ```sh
 parcel serve src/index.html --no-hmr
 ```
-
