@@ -1,2 +1,0 @@
-// gameConfig.js
-
