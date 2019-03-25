@@ -4,6 +4,9 @@ import playScene from './playScene';
 import menuScene from './menuScene';
 import endScene from './endScene';
 
-const scenes = [bootScene, playScene, menuScene, endScene];
-
-export default scenes;
+export default {
+  bootGame: bootScene,
+  playGame: playScene,
+  menuGame: menuScene,
+  endGame: endScene,
+};

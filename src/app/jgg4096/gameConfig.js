@@ -1,13 +1,18 @@
 // gameConfig.js
-import scenes from './scenes';
+import {
+  playGame
+} from './scenes';
 
-const gameConfig = {
+export default {
   title: '4096',
   type: Phaser.AUTO,
-  width: 480,
-  height: 640,
   backgroundColor: 0x00ff00,
-  scene: scenes, 
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    parent: "thegame",
+    width: 640,
+    height: 480
+  },
+  scene: playGame
 };
-
-export default gameConfig;
