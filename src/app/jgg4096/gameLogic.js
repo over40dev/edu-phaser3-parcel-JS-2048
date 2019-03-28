@@ -1,11 +1,13 @@
 // gameLogic.js
-export function resizeGame(game) {
+export function resizeGame() {
+  // let {width} = window.game.scale;
+  // console.log(width);
   const canvas = document.querySelector('canvas');
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;
   let windowRatio = windowWidth / windowHeight;
-  // let gameRatio = config.width / config.height;
-  let gameRatio = game.config.width / game.config.height;
+  // let gameRatio = scale.width / config.height;
+  let gameRatio = window.game.scale.width / window.game.scale.height;
 
   if (windowRatio < gameRatio) {
     // reduce game size

@@ -1,5 +1,6 @@
 // gameConfig.js
 import {
+  bootGame,
   playGame
 } from './scenes';
 
@@ -14,5 +15,5 @@ export default {
     width: 640,
     height: 480
   },
-  scene: playGame
+  scene: [bootGame, playGame]
 };

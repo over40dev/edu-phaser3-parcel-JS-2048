@@ -8,5 +8,5 @@ export default {
   bootGame: bootScene,
   playGame: playScene,
   menuGame: menuScene,
-  endGame: endScene,
+  endGame: endScene
 };
