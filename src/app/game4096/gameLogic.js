@@ -1,7 +1,5 @@
 // gameLogic.js
 export function resizeGame() {
-  // let {width} = window.game.scale;
-  // console.log(width);
   const canvas = document.querySelector('canvas');
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;

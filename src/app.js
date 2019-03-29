@@ -1,41 +1,62 @@
 import Phaser from 'phaser';
-// import gameConfig from './app/jgg4096/gameConfig';
-// import {resizeGame} from './app/jgg4096/gameLogic';
+import {CST} from './constants';
+// import gameConfig from './app/game4096/gameConfig';
+// import {resizeGame} from './app/game4096/gameLogic';
 
-const gameConfig = {
-  title: '4096',
-  type: Phaser.AUTO,
-  backgroundColor: 0x00ff00,
-  scale: {
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-    parent: "thegame",
-    width: 640,
-    height: 480
+let game;
+window.onload = function(){
+  const gameConfig = {
+    width: 480,
+    height: 640,
+    parent: 'thegame',
+    backgroundColor: 0xff0000,
+    scene: [loadGame, play4096]
   }
-};
 
-window.game = new Phaser.Game(gameConfig);
-
-window.focus();
-resizeGame();
-window.addEventListener('resize', resizeGame);
-
+  game = new Phaser.Game(gameConfig);
+  window.focus();
+  resizeGame();
+}
 
 // game code start
+
+// >>>>>src/app/game4096/scenes/loadgame.js
+class loadGame extends Phaser.Scene {
+  constructor(){
+    super({key: CST.scenes.LOAD});
+  }
+
+  preload(){
+    this.load.image('emptytile', './app/game4096/assets/sprites/emptytile.png');
+  }
+
+  create(){
+    this.scene.start(CST.scenes.PLAY4096);
+  }
+}
+
+// >>>>>src/app/game4096/scenes/playgame.js
+class play4096 extends Phaser.Scene {
+  constructor(){
+    super({key: CST.scenes.PLAY4096});
+  }
+
+  create(){
+    
+  }
+}
+
+
 
 // game code end
 
 
 function resizeGame() {
-  // let {width} = window.game.scale;
-  // console.log(width);
-  const canvas = document.querySelector('canvas');
+  const canvas = document.getElementById('thegame');
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;
   let windowRatio = windowWidth / windowHeight;
-  // let gameRatio = scale.width / config.height;
-  let gameRatio = window.game.scale.width / window.game.scale.height;
+  let gameRatio = game.scale.width / game.scale.height;
 
   if (windowRatio < gameRatio) {
     // reduce game size
