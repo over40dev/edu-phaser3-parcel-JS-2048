@@ -10,10 +10,21 @@
       padding: 0;
       font: caption;
     }
+    canvas {
+      display: block;
+      position: absolute;
+      margin: 0;
+      top: -50%;
+      left: -50%;
+      transform: translate(-50%, -50%);
+    }
+
   </style>
-  <title>JGG-4096</title>
+  <title>2048 clone</title>
   
   <body>
-    <script defer src="app.js"></script>
+    <div id="app-container"></div>
+    
+    <script defer src="game.js"></script>
   </body>
 </html>

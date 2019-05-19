@@ -2,18 +2,15 @@
   "name": "phaser-parcel",
   "version": "1.0.0",
   "description": "A Phaser 3 game template using Parcel bundler",
-  "main": "src/index.html",
+  "main": "app/index.html",
   "scripts": {
-    "build": "parcel build src/index.html --public-url './'",
-    "watch": "parcel watch src/index.html",
-    "start": "parcel serve src/index.html",
+    "build": "parcel build app/index.html --public-url './'",
+    "watch": "parcel watch app/index.html",
+    "start": "parcel serve app/index.html",
     "clean": "rm -v dist/*",
     "test": "eslint src"
   },
-  "keywords": [
-    "phaser",
-    "phaser3"
-  ],
+  "keywords": ["phaser", "phaser3"],
   "author": "samme",
   "license": "ISC",
   "dependencies": {
