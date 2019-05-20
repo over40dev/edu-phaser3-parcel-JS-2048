@@ -2,6 +2,11 @@
 
 ## Using Phaser3 with Parcel to build tutorial game from book by Emanuele Feronato "HTML5 Cross Platform Game Development Using Phaser3"
 
+### Progress
+
+- 000 initial setup
+- 001 adding first sprite
+
 =======================================================================
 
 [Parcel is a fast, zero-config web application bundler](https://parceljs.org).
@@ -35,12 +40,12 @@ See:
 
 ## Game assets
 
------------
+---
 
 Static assets used in your JavaScript need to be imported or required:
 
 ```javascript
-require('../assets/sky.png') // -> './sky.8fef0675.png'
+require('../assets/sky.png'); // -> './sky.8fef0675.png'
 ```
 
 See [bootScene](./src/app/bootScene.js) for an example.

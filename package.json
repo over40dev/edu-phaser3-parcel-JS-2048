@@ -1,5 +1,5 @@
 {
-  "name": "phaser-parcel",
+  "name": "001-phaser-parcel-2048-game",
   "version": "1.0.0",
   "description": "A Phaser 3 game template using Parcel bundler",
   "main": "app/index.html",
@@ -10,7 +10,7 @@
     "clean": "rm -v dist/*",
     "test": "eslint src"
   },
-  "keywords": ["phaser", "phaser3"],
+  "keywords": [],
   "author": "samme",
   "license": "ISC",
   "dependencies": {
